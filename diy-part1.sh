@@ -20,3 +20,4 @@
 
 git clone https://github.com/lichuang9/OP3/blob/main/mach-bhu-bxu2000n2-a.c
 mv -f mach-bhu-bxu2000n2-a.c target/linux/ar71xx/files/arch/mips/ath79/mach-bhu-bxu2000n2-a.c
+
