@@ -18,14 +18,5 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 
-rm -f target/linux/ar71xx/files/arch/mips/ath79/mach-bhu-bxu2000n2-a.c
-mv mach-bhu-bxu2000n2-a.c target/linux/ar71xx/files/arch/mips/ath79/mach-bhu-bxu2000n2-a.c
-
-rm -f target/linux/ar71xx/image/legacy.mk
-mv legacy.mk target/linux/ar71xx/image/legacy.mk
-
-rm -f target/linux/ar71xx/base-files/etc/diag.sh
-mv diag.sh target/linux/ar71xx/base-files/etc/diag.sh
-
-rm -f package/kernel/mac80211/files/lib/wifi/mac80211.sh
-mv mac80211.sh package/kernel/mac80211/files/lib/wifi/mac80211.sh
+git clone https://github.com/lichuang9/OP3/blob/main/mach-bhu-bxu2000n2-a.c
+mv -f mach-bhu-bxu2000n2-a.c target/linux/ar71xx/files/arch/mips/ath79/mach-bhu-bxu2000n2-a.c
