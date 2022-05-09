@@ -16,3 +16,16 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+
+rm -f openwrt/target/linux/ar71xx/files/arch/mips/ath79/mach-bhu-bxu2000n2-a.c
+mv mach-bhu-bxu2000n2-a.c openwrt/target/linux/ar71xx/files/arch/mips/ath79/mach-bhu-bxu2000n2-a.c
+
+rm -f openwrt/target/linux/ar71xx/image/legacy.mk
+mv legacy.mk openwrt/target/linux/ar71xx/image/legacy.mk
+
+rm -f openwrt/target/linux/ar71xx/base-files/etc/diag.sh
+mv diag.sh openwrt/target/linux/ar71xx/base-files/etc/diag.sh
+
+rm -f openwrt/package/kernel/mac80211/files/lib/wifi/mac80211.sh
+mv mac80211.sh openwrt/package/kernel/mac80211/files/lib/wifi/mac80211.sh
